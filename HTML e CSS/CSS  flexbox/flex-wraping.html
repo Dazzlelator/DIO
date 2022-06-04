@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Display wrap</title>
+    <style>
+        .flex-conteiner{
+            max-width: 300px;
+            height: 150px;
+            
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            font-size: 24px;
+            height: 50%;
+            min-width: 100px;
+            text-align: center;
+            
+            line-height: 75px;
+            
+        }       
+        .filler{
+            background-color: aquamarine;
+        }
+        .overflow{
+            background-color: tomato;
+        }
+
+        .no-wrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+</head>
+    <body>
+        <h1>No wrap</h1>
+        <div class="flex-conteiner no-wrap">
+            <div class="item filler">1</div>
+            <div class="item filler">2</div>
+            <div class="item filler">3</div>
+            <div class="item overflow">4</div>           
+        </div>
+
+        <h1>Wrap</h1>
+        <div class="flex-conteiner wrap">
+            <div class="item filler">1</div>
+            <div class="item filler">2</div>
+            <div class="item filler">3</div>
+            <div class="item overflow">4</div>           
+        </div>
+
+        <h1>Reverse wrap</h1>
+        <div class="flex-conteiner wrap-reverse">
+            <div class="item filler">1</div>
+            <div class="item filler">2</div>
+            <div class="item filler">3</div>
+            <div class="item overflow">4</div>           
+        </div> 
+        
+    </body>
+</html>
