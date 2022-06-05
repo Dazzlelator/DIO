@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex</title>
+    <style>
+        .flex-conteiner{
+            display: flex;
+            border: 1px solid black;
+            max-width: 600px;
+        }
+        .item{
+            background-color: black;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /*flex-grow 1, flex-shrink 1, basis 1*/
+        }
+        .flex-2{
+            flex: 2;
+            
+        }
+        .flex-3{
+            flex: 3;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h3>flex 1</h3>
+    <div class="flex-conteiner">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">B</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">E</div>
+    </div>
+    <h3>Misturado</h3>
+    <div class="flex-conteiner">
+        <div class="item flex-1">1</div>
+        <div class="item flex-2">2</div>
+        <div class="item flex-2">2</div>
+        <div class="item flex-1">1</div>
+        <div class="item flex-3">3</div>
+    </div>
+    <br>
+    Isso corresponde a taxa de distribuição dos itens dentro do flex conteiner assim como sua taxa de crescimento e encolhimento,
+ 
+    
+    
+</body>
+</html>

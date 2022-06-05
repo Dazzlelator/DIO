@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #122a57;
+    height: 100px;
+
+}
+
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-conteiner{
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    background-color: #122a57;
+    color: white;
+}
+
+.quem-somos img{
+    min-width: 500px;
+}
+
+.flex-conteiner h1{
+    color: white;
+}
+.flex-conteiner h2{
+    font-size: 48px;
+    color: #122a57;
+}
+
+h3{
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+h3::before{
+    content: "";
+    background-color: #122a57;
+    width: 5px;
+    height: 40px;
+    margin-right: 5px;
+}
+.quem-somos p {
+    width: 90%;
+    margin-bottom: 10px;
+}
+.link-saiba-mais a{
+    text-decoration: none;
+    color: white;
+}
+.link-saiba-mais{
+    margin-top: 5px;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    width: 200px;
+    background-color: #122a57;
+    border-radius: 50px;
+    
+}
+
+header .list-itens{
+    display: flex;
+    
+}
+.list-itens li a{
+    color: white;
+    margin: 0 12px; 
+}
+
+.menu{
+    justify-content: space-between;
+}
+
+
+.saiba-mais{
+    justify-content: space-between;
+}
+.quem-somos{
+    justify-content: space-between;
+}
+
+
+.conteiner{
+    margin-top: 20px;
+    background-color: #122a57;
+    width: 100%;
+    height: 450px;
+}
+.servicos{
+    height: 450px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;    
+}
+.itens-servicos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.item-servico{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.itens-servicos a{    
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    color: #122a57;
+    background-color: white;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.item-servico p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.conteiner2{   
+    margin-top: 20px;   
+    width: 100%;
+    height: 450px;
+}
+.descricoes{    
+    flex-direction: column;
+    align-items: flex-start;   
+    justify-content: center;    
+}
+.itens-descricao{    
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+.item-descricao{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #122a57;
+    margin: 4%;
+}
+.descricoes h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 15px 0;
+}
+.descricoes h4::after{
+    margin-top: 5px;
+    content: " ";
+    background-color: #122a57;
+    justify-content: center;
+    width: 90px;
+    height: 2px;
+}
+.descricoes a{
+    margin: auto;
+    margin-bottom: 10px;    
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    background-color: #122a57;
+    height: 35px;
+    width: 110px;
+    text-decoration: none;
+    border-radius: 50px;  
+}
+.item-descricao ul{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.item-descricao li{
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    
+    font-size: 15px;   
+}
+.item-descricao li::before{
+    content: "";
+    background-color: #122a57;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+}
+
+/* mobile */
+@media (max-width: 992px) {
+    .flex-conteiner{
+        flex-direction: column;
+    }
+    .quem-somos{
+        flex-direction: column-reverse;
+    }
+    .quem-somos p {
+        font-size: 22px;
+        width: 100%;
+        text-align: justify;
+    }
+
+
+    .conteiner{
+        display: flex;
+        height: 950px;
+    }
+    .servicos{
+        display: flex;
+        align-items: center;
+    }
+    .itens-servicos img{
+        width: 70%;
+        margin: auto;
+    }
+    .itens-servicos{
+        align-items: center;
+        flex-direction: column;        
+    }
+
+
+    .conteiner2{        
+        height: 1150px;       
+    }
+    .itens-descricao{
+       flex-direction: column;      
+        
+    }
+    .item-descricao{        
+        margin: auto;
+        width: 100%;
+    }
+
+    h4{
+        display: flex;
+        font-size: 35px;
+    }
+
+    h4::after{
+        display: none;
+    }
+    
+
+    .item-descricao ul{
+        margin: auto;
+    }
+
+    .item-descricao li{
+        font-size: 25px;
+    }
+    .item-descricao a{
+        line-height: 50px;
+        margin-top: 35px;
+        width: 250px;
+        height: 50px;
+        font-size: 35px;
+    }
+
+    
+}
