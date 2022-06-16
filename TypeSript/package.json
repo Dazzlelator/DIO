@@ -1,0 +1,17 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "typescript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "nod"
+  },
+  "author": "Raphael Monteiro",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
